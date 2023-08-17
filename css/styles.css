@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #161d18;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-color: #111;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+@keyframes onLoad {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo {
+    color: #5cff5c;
+    font-size: 24px;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    animation: onLoad 500ms 100ms ease-out both;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero h1::selection{
+    background-color: red;
+    color: hotpink;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #10a010;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3bc83b;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 40px;
+}
+
+.post {
+    background-color: #111;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.post h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #095f09;
+}
+
+.post .meta {
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.post p {
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #289f28;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 10px;
+}
