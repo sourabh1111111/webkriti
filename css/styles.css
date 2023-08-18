@@ -186,6 +186,7 @@ footer {
 
 .card-container {
     display: flex;
+    position: relative;
     justify-content: space-between;
     margin-top: 20px;
     height: 500px;
@@ -218,7 +219,79 @@ footer {
     }
 }
 
+.author-info {
+    position: absolute;
+    bottom: 4%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 .card:hover {
     transform: translateY(-10px);
 }
+
+
+ /* for navbar */
+/* ... Previous CSS content ... */
+
+/* ... Previous CSS content ... */
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px; /* Rounded radius at the bottom */
+    margin: 0; /* Remove margin */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 20px; /* Rounded radius for the search bar */
+    background-color: rgba(255, 255, 255, 0.1); /* Adjust to match your theme */
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 200px;
+    padding: 5px;
+    outline: none; /* Prevent highlighting */
+}
+
+/* ... Rest of the CSS content ... */

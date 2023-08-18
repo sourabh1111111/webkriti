@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... Head content ... -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="card">
+        <h2 class="blog-title"><%= data.blogTitle %></h2>
+        <div class="icon" style="background-color: <%= data.iconColor %>"></div>
+        <p class="blog-summary"><%= data.blogSummary %></p>
+        <img class="author-image" src="<%= data.authorImage %>" alt="Author Image">
+        <p class="author-name"><%= data.authorName %></p>
+        <p class="author-designation"><%= data.authorDesignation %></p>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
